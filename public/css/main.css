@@ -1,0 +1,66 @@
+#home_page{
+    background: url('/images/joanna-kosinska-478198-unsplash.jpg') no-repeat;  height:100vh;
+    background-size: cover;
+    background-attachment: fixed;
+  
+}
+
+.form-container{
+    margin-top: 20vh;
+    border: 0px solid #fff;
+    padding: 20px 20px;
+    -webkit-box-shadow: 6px 6px 49px 17px rgba(0,0,0,0.75);
+    -moz-box-shadow: 6px 6px 49px 17px rgba(0,0,0,0.75);
+    box-shadow: 6px 6px 49px 17px rgba(0,0,0,0.75);
+}
+.new-post{
+    padding: 16px 0;
+    border-bottom: 1px solid #ccc;
+}
+
+.new-post header, .posts header{
+    margin-bottom:20px;
+}
+
+.posts .post{
+    padding-left:10px;
+    border-left: 3px solid #f5a7a7;
+}
+
+.posts .post .info{
+    color: #aaa;
+    font-style: italic;
+}
+a,a:hover{
+    color: black;
+    text-decoration: none;
+}
+.is-like{
+    color: blue;
+    font-weight: bold;
+}
+.is-dislike{
+    color:red;
+    font-weight: bold;
+}
+
+.box-user{
+    border: 0px solid black;
+    padding: 25px;
+    -webkit-box-shadow: 6px 6px 49px 17px rgba(0,0,0,0.75);
+    -moz-box-shadow: 6px 6px 49px 17px rgba(0,0,0,0.75);
+    box-shadow: 6px 6px 49px 17px rgba(0,0,0,0.75);
+
+}
+#dashboard-full{
+    
+background: rgba(147,206,222,1);
+background: -moz-linear-gradient(left, rgba(147,206,222,1) 0%, rgba(117,189,209,0.84) 55%, rgba(199,213,217,0.74) 91%, rgba(219,219,219,0.74) 100%);
+background: -webkit-gradient(left top, right top, color-stop(0%, rgba(147,206,222,1)), color-stop(55%, rgba(117,189,209,0.84)), color-stop(91%, rgba(199,213,217,0.74)), color-stop(100%, rgba(219,219,219,0.74)));
+background: -webkit-linear-gradient(left, rgba(147,206,222,1) 0%, rgba(117,189,209,0.84) 55%, rgba(199,213,217,0.74) 91%, rgba(219,219,219,0.74) 100%);
+background: -o-linear-gradient(left, rgba(147,206,222,1) 0%, rgba(117,189,209,0.84) 55%, rgba(199,213,217,0.74) 91%, rgba(219,219,219,0.74) 100%);
+background: -ms-linear-gradient(left, rgba(147,206,222,1) 0%, rgba(117,189,209,0.84) 55%, rgba(199,213,217,0.74) 91%, rgba(219,219,219,0.74) 100%);
+background: linear-gradient(to right, rgba(147,206,222,1) 0%, rgba(117,189,209,0.84) 55%, rgba(199,213,217,0.74) 91%, rgba(219,219,219,0.74) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#93cede', endColorstr='#dbdbdb', GradientType=1 );
+
+}
