@@ -38,6 +38,7 @@ $('.like').click(function (event) {
    var urllike = $('#urllike').val();
    var token = $('#tokenlike').val();
    var postId   = event.target.parentNode.parentNode.dataset['post_id'];
+   console.log(isliked,postId);
 
 
    $.ajax({
@@ -47,14 +48,17 @@ $('.like').click(function (event) {
    })
    .done(function(msg){
         console.log(msg);
+        console.log(event.target);
         if(msg.status === true){
-            $('#is_like').removeClass('is-like');
-            $('#is_dislike').removeClass('is-dislike');
+            // $(event.target).removeClass('is-like is-dislike');
+            $(event.target).siblings().removeClass('is-like is-dislike');
+            $(event.target).removeClass('is-like is-dislike');
             if(msg.like === true && msg.undo === false){
-                $('#is_like').addClass('is-like');
+                $(event.target).addClass('is-like');
             }
             else if(msg.like === false && msg.undo === false){
-                $('#is_dislike').addClass('is-dislike');
+                console.log(111);
+                $(event.target).addClass('is-dislike');
             }
         }
    });

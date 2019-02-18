@@ -61,8 +61,8 @@
                                     published by {{ $post->user->name }} at {{ $post->created_at }}
                                 </div>
                                 <div class="interaction">
-                                    <a href="#" id="is_like" class="like isliked @if(array_key_exists($post->id,$postLikes)) @if($postLikes[$post->id]['like'] == 1) is-like @endif @endif ">Like</a> |
-                                    <a href="#" id="is_dislike" class="like @if(array_key_exists($post->id,$postLikes)) @if($postLikes[$post->id]['like'] == 0) is-dislike @endif @endif">Dislike</a> 
+                                    <a href="javascript:void(0);" id="is_like" class="like isliked @if(array_key_exists($post->id,$postLikes)) @if($postLikes[$post->id]['like'] == 1) is-like @endif @endif ">Like</a> |
+                                    <a href="javascript:void(0);" id="is_dislike" class="like @if(array_key_exists($post->id,$postLikes)) @if($postLikes[$post->id]['like'] == 0) is-dislike @endif @endif">Dislike</a> 
                                     <input type="hidden" id="tokenlike" name="tokenlike" value="{{ csrf_token() }}">
                                     <input type="hidden" id="urllike" name="urllike" value="{{ route('like') }}">
 
